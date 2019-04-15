@@ -1,0 +1,40 @@
+//color palette
+$color-primary: #eb2f64;
+$color-primary-light: #FF3366;
+$color-primary-dark: #BA265D;
+
+$color-grey-1: #faf9f9;
+$color-grey-2: #f4f2f2;
+$color-grey-3: #f0eeee;
+$color-grey-4: #ccc;
+
+$color-grey-5: #999;
+$color-grey-6: #777;
+$color-grey-7: #333;
+
+$color-light: #fff;
+$color-dark: #000;
+
+//grid
+$grid-width: 114rem;
+$gutter-vertical: 3rem;
+$gutter-horizontal: 6rem;
+
+//font
+$default-font-size: 1.6rem;
+
+//other
+$border-radius-box: 3px;
+
+/* 
+   media breakpoints
+   phone:                        37.5em  / 600px;
+   tablet-portrait (tab-port):   56.25em / 900px;
+   tablet-landscape (tab-land):  75em    / 1200px;
+   big-desktop (big-desk):       112.5em / 1800px;
+*/
+
+$phone:     37.5em;
+$tab-port:  56.25em;
+$tab-land:  75em;
+$big-desk:  112.5em;
