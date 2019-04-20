@@ -23,8 +23,11 @@ $gutter-horizontal: 6rem;
 //font
 $default-font-size: 1.6rem;
 
+//shadow
+$shadow-weak: 0 2rem 5rem rgba(0,0,0, 0.06);
+
 //other
-$border-radius-box: 3px;
+$hr-line: 1px solid $color-grey-2;
 
 /* 
    media breakpoints

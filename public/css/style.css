@@ -91,7 +91,30 @@ body {
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: 0.7rem; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.7rem;
+    background-color: #eb2f64;
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover; }
 
 .text-center {
   text-align: center !important; }
@@ -141,6 +164,44 @@ body {
 .ml-sm {
   margin-left: 0.5rem; }
 
+.flex {
+  display: flex; }
+
+.hotel {
+  flex: 1; }
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: #faf9f9;
+  border-bottom: 1px solid #f4f2f2; }
+
+.description {
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem; }
+
+.user-reviews {
+  flex: 1; }
+
+.recommend {
+  font-size: 1.3rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .recommend__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+    .recommend__photo:not(:last-child) {
+      margin-right: -1.5rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -154,12 +215,8 @@ body {
   height: 7rem;
   background-color: #fff;
   border-bottom: 1px solid #f4f2f2;
-  display: flex;
   justify-content: space-between;
   align-items: center; }
-
-.content {
-  display: flex; }
 
 .sidebar {
   background-color: #333;
@@ -167,10 +224,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-
-.view {
-  flex: 1;
-  height: 80rem; }
 
 .btn {
   border: none;
@@ -250,7 +303,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #f0eeee; }
+  border-bottom: 1px solid #f4f2f2; }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;

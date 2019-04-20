@@ -2,8 +2,7 @@
    font-size: 1.4rem;
    height: 7rem;
    background-color: #fff;
-   border-bottom: 1px solid $color-grey-2;
-   display: flex;
+   border-bottom: $hr-line;
    justify-content: space-between;
    align-items: center;
 }
