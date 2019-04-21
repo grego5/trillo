@@ -20,7 +20,17 @@
    &:hover,
    &:focus {
       outline: none;
-      animation: pulsate 1s infinite; 
+      animation: pulsate 1s infinite;
+   }
+
+   &__arrow {
+      margin-left: 3px;
+      transition: margin 0.2s;
+   }
+
+   &:hover &__arrow,
+   &:focus &__arrow {
+      margin-left: 8px;
    }
 }
  
