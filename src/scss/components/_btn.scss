@@ -1,23 +1,68 @@
 .btn {
    border: none;
+   color: $color-light;
+   font-size: 1.5rem;
+   font-weight: 300;
+   text-transform: uppercase;
+   border-radius: 50px;
+   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   
+   &__front,
+   &__back {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: transform 0.2s;
+   }
+
+   &__front {
+      padding: 2rem 7.5rem;
+   }
+
+   &__back {
+      position: absolute;
+      padding: 2rem 0;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+   }
+
+   &:hover {
+      background-image: linear-gradient(to left, $color-primary-light, $color-primary-dark);
+   }
+
+   &:hover  &__front {
+      transform: translateY(100%)
+   }
+
+   &:hover &__back {
+      transform: translateY(0)
+   }
+
+   &:focus {
+      outline: none;
+      animation: pulsate 1s infinite;
+   }
+}
+
+.btn-link {
+   display: inline-block;
    color: $color-primary;
    font-size: inherit;
+   padding-bottom: 2px;
    background: transparent;
-   cursor: pointer;
+   border: none;
+   border-bottom: 1px solid currentColor;
    transition: color 0.2s;
-   
-   &--inline {
-      
-      border-bottom: 1px solid currentColor;
-      padding-bottom: 2px;
-      display: inline-block;
-   }
+   cursor: pointer;
 
    &:hover {
       color: $color-grey-7;
    }
    
-   &:hover,
    &:focus {
       outline: none;
       animation: pulsate 1s infinite;
@@ -34,6 +79,8 @@
    }
 }
  
+
+
 @keyframes pulsate {
    0% {
       transform: scale(1);
