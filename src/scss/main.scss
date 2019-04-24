@@ -11,6 +11,7 @@
 
 @import "layout/container"; 
 @import "layout/header"; 
+@import "layout/content"; 
 @import "layout/sidebar"; 
 @import "layout/cta"; 
 
@@ -18,8 +19,9 @@
 @import "components/logo";
 @import "components/search";
 @import "components/gallery"; 
-@import "components/overview"; 
+@import "components/overview";
 @import "components/user-nav";
-@import "components/side-nav"; 
+@import "components/side-nav";  
 @import "components/legal";
-@import "components/review"; 
+@import "components/list"; 
+@import "components/review";

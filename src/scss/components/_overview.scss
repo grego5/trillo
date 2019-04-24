@@ -4,28 +4,43 @@
    border-bottom: $hr-line;
 
    &__heading {
+      display: flex;
+      align-items: center;
       font-size: 2.25rem;
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 1px;
       padding: 1.5rem 3rem;
+      margin-right: auto;
+      line-height: 1.2;
+      flex: 1 1;
+
+      @include respond(phone) {
+         padding-right: 0;
+         flex-direction: column;
+         align-items: unset;
+      }
    }
 
    &__stars {
-      margin-right: auto;
       display: flex;
+      padding-left: 1.5rem;
+
+      @include respond(phone) { 
+         padding: 0;
+      }
    }
 
    &__icon {
       width: 1.75rem;
       height: 1.75rem;
-      fill: $color-primary;
+      fill: currentColor;
    } 
 
    &__location {
       font-size: 1.2rem;
-      display: flex;
       align-items: center;
+      line-height: 1;
    }
 
    &__rating {

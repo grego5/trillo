@@ -32,12 +32,12 @@ $hr-line: 1px solid $color-grey-2;
 /* 
    media breakpoints
    phone:                        37.5em  / 600px;
-   tablet-portrait (tab-port):   56.25em / 900px;
+   tablet-portrait (tab-port):   62.5em / 1000px;
    tablet-landscape (tab-land):  75em    / 1200px;
    big-desktop (big-desk):       112.5em / 1800px;
 */
 
-$phone:     37.5em;
-$tab-port:  56.25em;
+$phone:     37.5em; 
+$tab-port:  62.5em;
 $tab-land:  75em;
 $big-desk:  112.5em;

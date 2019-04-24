@@ -1,11 +1,15 @@
 .cta {
    padding: 3.5rem 0;
-   text-align-last: center;
+   text-align: center;
 
    &__text {
       text-transform: uppercase;
       font-weight: 300;
       font-size: 2rem;
       margin-bottom: 2.5rem;
+
+      @include respond(phone) {
+         font-size: 1.6rem;
+      }
    }
 }
